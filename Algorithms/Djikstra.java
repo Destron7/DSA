@@ -1,4 +1,4 @@
-package fdms;
+package DSA.Algorithms;
 
 public class Djikstra {
 
