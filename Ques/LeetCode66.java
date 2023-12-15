@@ -1,28 +1,34 @@
+import java.math.BigInteger;
+
 public class LeetCode66 {
     public static void main(String[] args) {
-        Solution s = new Solution();
-        int [] digits = {1,2,4};
-        int [] soln = s.plusOne(digits);
+        int[] digits = { 9 };
+        int[] soln = Solution.plusOne(digits);
         for (int i = 0; i < soln.length; i++) {
             System.out.println(soln[i]);
         }
     }
 }
+
 class Solution {
-    public int[] plusOne(int[] digits) {
-        if((digits[digits.length-1]+=1)==9){
-            if(digits.length>1){
-                digits[digits.length-2] += 1;
-                digits[digits.length-1] += 0;
-            }else{
-                int soln[] = new int[digits.length];
-                soln[0]=1;
-                soln[1]=0;
-                return soln;
-            }
-        }else{
-            
+    public static int[] plusOne(int[] digits) {
+
+        StringBuilder str = new StringBuilder();
+
+        for (int digit : digits) {
+            str.append(digit);
         }
-        return digits;
+
+        BigInteger num = new BigInteger(str.toString());
+        num = num.add(BigInteger.ONE);
+
+        String resultStr = num.toString();
+
+        int[] result = new int[resultStr.length()];
+
+        for (int i = 0; i < resultStr.length(); i++) {
+            result[i] = Character.getNumericValue(resultStr.charAt(i));
+        }
+        return result;
     }
 }
