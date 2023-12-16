@@ -1,16 +1,17 @@
+
 import java.math.BigInteger;
 
 public class LeetCode66 {
     public static void main(String[] args) {
         int[] digits = { 9 };
-        int[] soln = Solution.plusOne(digits);
+        int[] soln = Solution1.plusOne(digits);
         for (int i = 0; i < soln.length; i++) {
             System.out.println(soln[i]);
         }
     }
 }
 
-class Solution {
+class Solution1 {
     public static int[] plusOne(int[] digits) {
 
         StringBuilder str = new StringBuilder();
