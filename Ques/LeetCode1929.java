@@ -1,4 +1,5 @@
-package DSA.Ques;
+
+// package DSA.Ques;
 /*
  * Q1929> (Easy)
  * Given an integer array nums of length n, you want to create an array ans of
@@ -15,7 +16,7 @@ import java.util.Scanner;
 public class LeetCode1929 {
 }
 
-class Solution {
+class Solution4 {
 
     public static int ans[];
     public static int nums[];
@@ -30,11 +31,11 @@ class Solution {
     }
 
     public static void main(String[] args) {
-        Solution obj = new Solution();
+        Solution4 obj = new Solution4();
         int[] nums = { 1, 2, 1 };
         System.out.println(nums);
         ans = obj.getConcatenation(nums);
-        System.out.print("SOLUTION ARRAY: [");
+        System.out.print("SOLUTION4 ARRAY: [");
         for (int i = 0; i < ans.length; i++) {
             System.out.print(" " + ans[i] + " ");
         }
@@ -42,10 +43,10 @@ class Solution {
     }
 }
 
-class DynamicSolution {
+class DynamicSolution4 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        Solution obj = new Solution();
+        Solution4 obj = new Solution4();
         System.out.print("ENTER SIZE OF ARRAY NUMS: ");
         int n = sc.nextInt();
         for (int i = 0; i < obj.nums.length; i++) {
@@ -54,7 +55,7 @@ class DynamicSolution {
         }
         System.out.println(obj.nums);
         obj.ans = obj.getConcatenation(obj.nums);
-        System.out.print("SOLUTION ARRAY: [");
+        System.out.print("SOLUTION4 ARRAY: [");
         for (int i = 0; i < obj.ans.length; i++) {
             System.out.print(" " + obj.ans[i] + " ");
         }
