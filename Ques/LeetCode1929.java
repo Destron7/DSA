@@ -1,5 +1,5 @@
 
-// package DSA.Ques;
+// 
 /*
  * Q1929> (Easy)
  * Given an integer array nums of length n, you want to create an array ans of
