@@ -33,3 +33,4 @@
         System.out.println("Total amount of trapped rainwater: " + trappedWater);
     }
 }
+
